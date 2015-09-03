@@ -12,7 +12,7 @@ $ npm install isbn-utils
 
 ### Usage
 
-```
+```js
 var isbn = require('isbn-utils');
 
 var isbn10a = isbn.parse('4873113369');
