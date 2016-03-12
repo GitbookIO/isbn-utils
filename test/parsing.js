@@ -5,6 +5,7 @@ var isbn10a = isbn.parse('4873113369');
 var isbn10b = isbn.parse('1933988037');
 var isbn13a = isbn.parse('978-4-87311-336-4');
 var isbn13b = isbn.parse('9781590597279');
+var isbn13c = isbn.parse('9791091146135')
 
 describe('isbn.parse', function () {
 
@@ -84,6 +85,11 @@ describe('isbn.asIsbn13 and isbn.isIsbn13', function () {
         isbn13b.asIsbn13(true).should.be.exactly('978-1-59059-727-9');
     });
 
+    it('should correctly convert an isbn starting with 979', function() {
+        isbn13c.isIsbn13().should.be.ok;
+        isbn13c.asIsbn13().should.be.exactly('9791091146135');
+        isbn13c.asIsbn13(true).should.be.exactly('979-10-91146-13-5');
+    });
 });
 
 describe('isbn.isValid', function () {
