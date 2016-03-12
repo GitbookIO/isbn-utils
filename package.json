@@ -1,26 +1,27 @@
 {
-    "name": "isbn-utils",
-    "version": "1.0.0",
-    "main": "lib/index.js",
-    "author": "GitBook <contact@gitbook.com>",
-    "description": "Library to parse and normalize ISBNs",
-    "bugs": "https://github.com/GitbookIO/isbn-utils/issues",
-    "license": "Apache-2.0",
-    "engines": {
-        "node": ">=0.6"
-    },
-    "dependencies": {
-
-    },
-    "devDependencies": {
-        "mocha": "2.2.1",
-        "should": "5.2.0"
-    },
-    "scripts": {
-        "test": "node_modules/.bin/mocha --reporter spec --timeout 15000"
-    },
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/GitbookIO/isbn-utils.git"
-    }
+  "name": "isbn-utils",
+  "version": "1.0.0",
+  "main": "lib/index.js",
+  "author": "GitBook <contact@gitbook.com>",
+  "description": "Library to parse and normalize ISBNs",
+  "bugs": "https://github.com/GitbookIO/isbn-utils/issues",
+  "license": "Apache-2.0",
+  "engines": {
+    "node": ">=0.6"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "mocha": "2.2.1",
+    "request": "^2.69.0",
+    "should": "5.2.0",
+    "xml2js": "^0.4.16"
+  },
+  "scripts": {
+    "test": "node_modules/.bin/mocha --reporter spec --timeout 15000",
+    "update-groups": "node tools/update-groups.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/GitbookIO/isbn-utils.git"
+  }
 }
